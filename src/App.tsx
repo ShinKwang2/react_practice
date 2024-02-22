@@ -1,21 +1,21 @@
 import { useRef } from 'react';
 import './App.css';
-import CatFriends from './components/CatFriends';
-import Form from './components/Form';
-import ForwardRef from './components/ForwardRef';
+// import CatFriends from './components/CatFriends';
+// import Form from './components/Form';
+// import ForwardRef from './components/ForwardRef';
 import VideoForward from './components/VideoForward';
-import VideoPlayer from './components/VideoPlayer';
+// import VideoPlayer from './components/VideoPlayer';
 import ImperativeHandlerForm from './components/imperativeHandler/ImperativeHandlerForm';
 
 function App() {
   // const [count, setCount] = useState(0);
-  // const videRef = useRef<HTMLVideoElement>(null);
+  const videRef = useRef<HTMLVideoElement>(null);
 
   return (
     <>
       <ImperativeHandlerForm />
 
-      {/* <div>
+      <div>
         <button onClick={() => videRef.current?.play()}>Play</button>
         <button onClick={() => videRef.current?.pause()}>Pause</button>
         <div>
@@ -26,7 +26,7 @@ function App() {
             width='250'
           />
         </div>
-      </div> */}
+      </div>
 
       {/* <ForwardRef /> */}
       {/* <VideoPlayer /> */}
