@@ -5,24 +5,30 @@ import Form from './components/Form';
 import ForwardRef from './components/ForwardRef';
 import VideoForward from './components/VideoForward';
 import VideoPlayer from './components/VideoPlayer';
+import ImperativeHandlerForm from './components/imperativeHandler/ImperativeHandlerForm';
 
 function App() {
   // const [count, setCount] = useState(0);
-  const videRef = useRef<HTMLVideoElement>(null);
+  // const videRef = useRef<HTMLVideoElement>(null);
 
   return (
     <>
-      <button onClick={() => videRef.current?.play()}>Play</button>
-      <button onClick={() => videRef.current?.pause()}>Pause</button>
-      <div>
-        <VideoForward
-          ref={videRef}
-          src='https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4'
-          type='video/mp4'
-          width='250'
-        />
-      </div>
-      <ForwardRef />
+      <ImperativeHandlerForm />
+
+      {/* <div>
+        <button onClick={() => videRef.current?.play()}>Play</button>
+        <button onClick={() => videRef.current?.pause()}>Pause</button>
+        <div>
+          <VideoForward
+            ref={videRef}
+            src='https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4'
+            type='video/mp4'
+            width='250'
+          />
+        </div>
+      </div> */}
+
+      {/* <ForwardRef /> */}
       {/* <VideoPlayer /> */}
       {/* <Form /> */}
       {/* <CatFriends /> */}
