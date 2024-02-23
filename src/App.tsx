@@ -6,6 +6,7 @@ import './App.css';
 import VideoForward from './components/VideoForward';
 // import VideoPlayer from './components/VideoPlayer';
 import ImperativeHandlerForm from './components/imperativeHandler/ImperativeHandlerForm';
+import MyApp from './components/context/MyApp';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -15,7 +16,9 @@ function App() {
     <>
       <ImperativeHandlerForm />
 
-      <div>
+      <MyApp />
+
+      {/* <div>
         <button onClick={() => videRef.current?.play()}>Play</button>
         <button onClick={() => videRef.current?.pause()}>Pause</button>
         <div>
@@ -26,7 +29,7 @@ function App() {
             width='250'
           />
         </div>
-      </div>
+      </div> */}
 
       {/* <ForwardRef /> */}
       {/* <VideoPlayer /> */}
